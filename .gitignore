@@ -1,0 +1,11 @@
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.env
+.envi
+**/.Python
+**/env
+**/env/
+**/env.bak/
+**/env.bak2/
