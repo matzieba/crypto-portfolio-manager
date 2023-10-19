@@ -7,4 +7,5 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         client = CoinGeckoClient()
         geco_coins_list = client.get_coin_list()
+        print(geco_coins_list[0])
 
