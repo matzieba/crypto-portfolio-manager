@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from crypto_api.views.user import UserMeView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r"users/me", UserMeView.as_view(), name="me"),
 ]
