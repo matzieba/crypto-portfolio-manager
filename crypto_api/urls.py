@@ -27,5 +27,4 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path(r"users/me", UserMeView.as_view(), name="me"),
-    path('portfolio/', UserPortfolio.as_view(), name='portfolio-detail'),
 ]
