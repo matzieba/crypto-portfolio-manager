@@ -13,3 +13,4 @@ class UserMeView(generics.RetrieveAPIView):
 
     def get_object(self):
         return User.objects.get(pk=self.request.user.id)
+
