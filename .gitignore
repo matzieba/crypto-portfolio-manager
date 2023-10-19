@@ -5,7 +5,7 @@
 .env
 .envi
 **/.Python
-**/env
-**/env/
-**/env.bak/
-**/env.bak2/
+**/myenv
+**/myenv/
+**/myenv.bak/
+**/myenv.bak2/

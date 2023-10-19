@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 'crypto_api'
+      POSTGRES_USER: 'crypto_api'
+      POSTGRES_DB: 'crypto_api'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+  api:
+    depends_on:
+      - db
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
