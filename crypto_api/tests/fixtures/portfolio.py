@@ -5,5 +5,8 @@ from crypto_api.models import Portfolio
 
 
 @pytest.fixture()
-def company():
-    return baker.make(Portfolio)
+def portfolio(user):
+    return baker.make(
+        Portfolio,
+        user=user,
+    )
